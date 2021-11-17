@@ -31,10 +31,16 @@
   --color-white: #fff;
   --color-black: #000;
 
+  --color-text: #FFD9F3;
+
   // SHADOWS
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
   // LINES
   --line: 1px solid var(--color-grey-light-2);
+
+  // FONTS
+  --font-heading: 'video', 'sans-serif';
+  --font-body: 'source-sans-pro', 'sans-serif';
 }

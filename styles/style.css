@@ -9,6 +9,38 @@ Order: Base + Typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+:root {
+  --color-primary: #a581dd;
+  --color-primary-light: #b79ae4;
+  --color-primary-dark: #8467b1;
+  --color-secondary: #f84b9b;
+  --color-secondary-light: #f96faf;
+  --color-secondary-dark: #c63c7c;
+  --color-tertiary: #d868c1;
+  --color-tertiary-light: #e086cd;
+  --color-tertiary-dark: #ad539a;
+  --color-quaternary: #8e0e49;
+  --color-quaternary-light: #a53e6d;
+  --color-quaternary-dark: #720b3a;
+  --color-quinary: #6588e2;
+  --color-quinary-light: #84a0e8;
+  --color-quinary-dark: #516db5;
+  --color-senary: #4ba9ff;
+  --color-senary-light: #6fbaff;
+  --color-senary-dark: #3c87cc;
+  --color-background: #250022;
+  --color-background-light: #51334e;
+  --color-background-dark: #1e001b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-text: #FFD9F3;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+  --font-heading: "video", "sans-serif";
+  --font-body: "source-sans-pro", "sans-serif";
+}
+
 *,
 *::before,
 *::after {
@@ -20,6 +52,39 @@ Order: Base + Typography > general layout + grid > page layout > components
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 6rem;
+}
+.heading--semi-bold {
+  font-weight: 600;
+}
+.heading--bold {
+  font-weight: 700;
+}
+
+.paragraph {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.paragraph--bold {
+  font-weight: 700;
+}
+
+.btn {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 2.4rem;
 }
 
 .footer {

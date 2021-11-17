@@ -10,9 +10,7 @@ const Footer = () => {
         xmlns='http://www.w3.org/2000/svg'
         x={0}
         y={0}
-        viewBox={
-         '0 518 1920 400'
-        }
+        viewBox={'0 518 1920 400'}
         xmlSpace='preserve'
         {...props}>
         <path
@@ -27,11 +25,23 @@ const Footer = () => {
 
   return (
     <div className='footer'>
+      <p className='paragraph paragraph--bold'>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt id
+        optio itaque ut impedit maxime quidem ab vero perferendis, sunt
+        consequatur obcaecati suscipit explicabo asperiores delectus non
+        doloremque officia. Voluptatem?
+      </p>
+      <p className='heading heading--bold'>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt id
+        optio itaque ut impedit maxime quidem ab vero perferendis, sunt
+        consequatur obcaecati suscipit explicabo asperiores delectus non
+        doloremque officia. Voluptatem?
+      </p>
       <Wave className='outer-wave' />
       <div className='footer-logo-box'>
         <Image
           className='footer-logo'
-          src= {Adaptive_logo}
+          src={Adaptive_logo}
           data-cy='footer-logo'
           alt='Adaptive Labs Nordics AB Logo'
         />

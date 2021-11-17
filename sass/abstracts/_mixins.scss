@@ -1,3 +1,9 @@
+@mixin font-selector ($name, $weight, $size ) {
+  font-family: $name;
+  font-weight: $weight;
+  font-size: $size;
+}
+
 /*
 $breakpoint argument choices:
 - phone
