@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import Footer from '../components/footer/footer'
+import '../styles/style.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp() {
+  return  (
+    <container className='page-container'>
+      <Footer />
+    </container>
+  )
 }
 
 export default MyApp

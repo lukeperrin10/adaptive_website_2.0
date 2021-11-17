@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.footer {
+  position: bottom;
+}
+
+.outer-wave {
+  position: absolute;
+  background-color: #00000000;
+  bottom: 0px;
+  max-width: 100%;
+}
+
+.footer-logo-box {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-left: 100px;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer-logo-box {
+    width: 80px;
+    margin-left: 50px;
+    padding-bottom: 15px;
+  }
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

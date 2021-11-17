@@ -1,0 +1,30 @@
+.footer {
+  position: bottom;
+}
+
+.outer-wave {
+  position: absolute;
+  background-color: #00000000;
+  bottom: 0px;
+  max-width: 100%;
+}
+
+.footer-logo-box {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-left: 100px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.page-container {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.comp.css.map */
