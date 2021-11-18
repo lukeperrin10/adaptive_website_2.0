@@ -1,0 +1,30 @@
+.footer {
+  position: bottom;
+}
+
+.outer-wave {
+  position: absolute;
+  background-color: #00000000;
+  bottom: 0px;
+  max-width: 100%;
+}
+
+.footer-logo-box {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-left: 100px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.page-container {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbGF5b3V0L19mb290ZXIuc2NzcyIsInN0eWxlLmNvbXAuY3NzIiwiLi4vc2Fzcy9sYXlvdXQvX3BhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0FDQ0Y7O0FERUE7RUFDRSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7QUNDRjs7QURFQTtFQUNFLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0EsdUJBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0FDQ0Y7O0FERUE7RUFDRSxZQUFBO0FDQ0Y7O0FDdEJBO0VBQ0UsZUFBQTtBRHlCRiIsImZpbGUiOiJzdHlsZS5wcmVmaXguY3NzIn0= */

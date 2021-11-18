@@ -1,0 +1,26 @@
+body {
+  @include font-selector(var(--font-body), 400, 1.6rem);
+}
+
+.heading {
+  @include font-selector(var(--font-heading), 400, 6rem);
+
+  &--semi-bold {
+    font-weight: 600;
+  }
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.paragraph {
+  @include font-selector(var(--font-body), 400, 1.6rem);
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.btn {
+  @include font-selector(var(--font-heading), 400, 2.4rem);
+}
