@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <p className='paragraph paragraph--bold'>
+      <p className='paragraph'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt id
         optio itaque ut impedit maxime quidem ab vero perferendis, sunt
         consequatur obcaecati suscipit explicabo asperiores delectus non
