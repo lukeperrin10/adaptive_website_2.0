@@ -1,11 +1,12 @@
 import Footer from '../components/footer/footer'
 import '../styles/style.css'
 
-function MyApp() {
-  return  (
-    <container className='page-container'>
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Component {...pageProps} />
       <Footer />
-    </container>
+    </>
   )
 }
 
