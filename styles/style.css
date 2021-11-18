@@ -93,4 +93,48 @@ body {
   grid-template-columns: 1fr;
 }
 
+.nav {
+  height: 6rem;
+  background-color: chocolate;
+}
+
+.hero {
+  background-color: brown;
+}
+
+.process {
+  height: 6rem;
+  background-color: green;
+}
+
+.craft-academy {
+  height: 6rem;
+  background-color: red;
+}
+
+.clients {
+  height: 6rem;
+  background-color: blue;
+}
+
+.tech {
+  height: 6rem;
+  background-color: blueviolet;
+}
+
+.about {
+  height: 6rem;
+  background-color: orangered;
+}
+
+.contact {
+  height: 6rem;
+  background-color: pink;
+}
+
+.footer {
+  height: 6rem;
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=style.css.map */
