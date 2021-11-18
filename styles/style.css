@@ -87,36 +87,10 @@ body {
   font-size: 2.4rem;
 }
 
-.footer {
-  position: bottom;
-}
-
-.outer-wave {
-  position: absolute;
-  background-color: #00000000;
-  bottom: 0px;
-  max-width: 100%;
-}
-
-.footer-logo-box {
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  width: 200px;
-  justify-content: center;
-  padding-bottom: 20px;
-  margin-left: 100px;
-}
-@media only screen and (max-width: 56.25em) {
-  .footer-logo-box {
-    width: 80px;
-    margin-left: 50px;
-    padding-bottom: 15px;
-  }
-}
-
-.footer-logo {
-  width: 100%;
+.home-container {
+  display: grid;
+  grid-template-rows: calc(100vh - 6rem);
+  grid-template-columns: 1fr;
 }
 
 /*# sourceMappingURL=style.css.map */

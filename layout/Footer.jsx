@@ -25,19 +25,8 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <p className='paragraph'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt id
-        optio itaque ut impedit maxime quidem ab vero perferendis, sunt
-        consequatur obcaecati suscipit explicabo asperiores delectus non
-        doloremque officia. Voluptatem?
-      </p>
-      <p className='heading heading--bold'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt id
-        optio itaque ut impedit maxime quidem ab vero perferendis, sunt
-        consequatur obcaecati suscipit explicabo asperiores delectus non
-        doloremque officia. Voluptatem?
-      </p>
-      <Wave className='outer-wave' />
+      footer
+      {/* <Wave className='outer-wave' />
       <div className='footer-logo-box'>
         <Image
           className='footer-logo'
@@ -45,7 +34,7 @@ const Footer = () => {
           data-cy='footer-logo'
           alt='Adaptive Labs Nordics AB Logo'
         />
-      </div>
+      </div> */}
     </div>
   )
 }

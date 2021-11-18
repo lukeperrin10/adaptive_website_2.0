@@ -1,32 +1,33 @@
 
 
-.footer {
-  position: bottom;
-}
+// .footer {
+//   position: bottom;
+// }
 
-.outer-wave {
-  position: absolute;
-  background-color: #00000000;
-  bottom: 0px;
-  max-width: 100%;
-}
+// .outer-wave {
+//   position: relative;
+//   background-color: #00000000;
+//   bottom: 0px;
+//   max-width: 100%;
+// }
 
-.footer-logo-box {
+// .footer-logo-box {
   
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  width: 200px;
-  justify-content: center;
-  padding-bottom: 20px;
-  margin-left: 100px;
-  @include respond(tab-port) {
-    width: 80px;
-    margin-left: 50px;
-    padding-bottom: 15px;
-  }
-}
+//   position: absolute;
+//   bottom: 0px;
+//   left: 0px;
+//   display: flex;
+//   width: 200px;
+//   justify-content: center;
+//   padding-bottom: 20px;
+//   margin-left: 100px;
+//   @include respond(tab-port) {
+//     width: 80px;
+//     margin-left: 50px;
+//     padding-bottom: 15px;
+//   }
+// }
 
-.footer-logo {
-  width: 100%;
-}
+// .footer-logo {
+//   width: 100%;
+// }

@@ -1,0 +1,5 @@
+.home-container {
+  display: grid;
+  grid-template-rows: calc(100vh - 6rem);
+  grid-template-columns: 1fr;
+}
