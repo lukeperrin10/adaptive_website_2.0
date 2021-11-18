@@ -87,6 +87,43 @@ body {
   font-size: 2.4rem;
 }
 
+.u-center-text {
+  text-align: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  width: 100%;
+  justify-items: center;
+  gap: 6rem 0;
+  background-image: linear-gradient(to right, rgba(248, 75, 155, 0.7), rgba(165, 129, 221, 0.7));
+}
+.hero__header {
+  align-self: end;
+  padding: 0 10rem;
+}
+.hero__btn {
+  display: block;
+  padding: 1rem 8rem;
+  align-self: start;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  overflow: hidden;
+}
+.bg-video .__content {
+  height: 100%;
+  object-fit: cover;
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
@@ -96,10 +133,6 @@ body {
 .nav {
   height: 6rem;
   background-color: chocolate;
-}
-
-.hero {
-  background-color: brown;
 }
 
 .process {
