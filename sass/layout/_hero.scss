@@ -1,0 +1,42 @@
+.hero {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  width: 100%;
+  justify-items: center;
+  gap: 6rem 0;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-secondary, 0.7),
+    rgba($color-primary, 0.7)
+  );
+
+  &__header {
+    align-self: end;
+    padding: 0 10rem;
+  }
+
+  &__btn {
+    display: block;
+    padding: 1rem 8rem;
+    align-self: start;
+  }
+
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  overflow: hidden;
+  
+  .__content {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+ 

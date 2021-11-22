@@ -64,6 +64,7 @@ body {
   font-family: var(--font-heading);
   font-weight: 400;
   font-size: 6rem;
+  color: #fadbf6;
 }
 .heading--semi-bold {
   font-weight: 600;
@@ -87,36 +88,102 @@ body {
   font-size: 2.4rem;
 }
 
-.footer {
-  position: bottom;
+.u-center-text {
+  text-align: center;
 }
 
-.outer-wave {
-  position: absolute;
-  background-color: #00000000;
-  bottom: 0px;
-  max-width: 100%;
+.btn {
+  background: linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%);
+  border: 0;
+  border-radius: 100px;
+  box-shadow: inset 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  color: #eee;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: inset 0 32px 59px 22px rgba(75, 169, 255, 0.2);
 }
 
-.footer-logo-box {
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  width: 200px;
-  justify-content: center;
-  padding-bottom: 20px;
-  margin-left: 100px;
-}
-@media only screen and (max-width: 56.25em) {
-  .footer-logo-box {
-    width: 80px;
-    margin-left: 50px;
-    padding-bottom: 15px;
-  }
-}
-
-.footer-logo {
+.hero {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
   width: 100%;
+  justify-items: center;
+  gap: 6rem 0;
+  background-image: linear-gradient(to right, rgba(248, 75, 155, 0.7), rgba(165, 129, 221, 0.7));
+}
+.hero__header {
+  align-self: end;
+  padding: 0 10rem;
+}
+.hero__btn {
+  display: block;
+  padding: 1rem 8rem;
+  align-self: start;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  overflow: hidden;
+}
+.bg-video .__content {
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-container {
+  display: grid;
+  grid-template-rows: calc(100vh - 6rem);
+  grid-template-columns: 1fr;
+}
+
+.nav {
+  height: 6rem;
+  background-color: chocolate;
+}
+
+.process {
+  height: 6rem;
+  background-color: green;
+}
+
+.craft-academy {
+  height: 6rem;
+  background-color: red;
+}
+
+.clients {
+  height: 6rem;
+  background-color: blue;
+}
+
+.tech {
+  height: 6rem;
+  background-color: blueviolet;
+}
+
+.about {
+  height: 6rem;
+  background-color: orangered;
+}
+
+.contact {
+  height: 6rem;
+  background-color: pink;
+}
+
+.footer {
+  height: 6rem;
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
