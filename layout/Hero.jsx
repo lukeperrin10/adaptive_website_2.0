@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
       <div className="hero__btn">
         <button className="btn">
-          get in touch
+          {'{ get in touch }'}
         </button>
       </div>
     </section>

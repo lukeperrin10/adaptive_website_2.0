@@ -1,6 +1,6 @@
-.process-grid {
+.accordion {
   display: grid;
-  grid-template-rows: 250px repeat(4, min-content);
+  grid-template-rows: 25rem repeat(4, min-content);
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: start;
@@ -10,8 +10,9 @@
     align-self: center;
   }
 
-  &__flexible {
-    padding: 50px 200px;
+  .accordion-item {
+    padding: 5rem 50rem 3rem 50rem;
+    position: relative;
     &--1 {
       background-color: var(--color-secondary);
     }
@@ -27,9 +28,21 @@
     &--4 {
       background-color: var(--color-quinary);
     }
+
+    &__content {
+      opacity: 1;
+      &:active {
+        opacity: 0;
+      }
+    }
+
+    &__icon-box {
+      margin-top: 4rem;
+    }
+
+    &__icon {
+      fill: #fadbf6;
+    }
   }
 
-  .content {
-    opacity: 1;
-  }
 }

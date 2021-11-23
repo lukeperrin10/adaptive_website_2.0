@@ -17,10 +17,12 @@ body {
 
 .heading-2 {
   @include font-selector(var(--font-heading), 400, 4rem);
+  text-transform: uppercase
 }
 
 .heading-3 {
   @include font-selector(var(--font-heading), 700, 3rem);
+  text-transform: capitalize
 }
 
 
