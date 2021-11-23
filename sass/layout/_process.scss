@@ -1,0 +1,26 @@
+.process-grid {
+  display: grid;
+  grid-template-rows: repeat(5, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  // &__static {
+
+  // }
+
+  // &__flexible {
+  // &--1 {
+  // }
+
+  // &--2 {
+  // }
+
+  // &--3 {
+  // }
+
+  // &--4 {
+  // }
+  // }
+}
