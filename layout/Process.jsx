@@ -4,7 +4,7 @@ const Process = () => {
   return (
     <div className='process'>
       <div className='process-grid'>
-        <div className='process__static'>
+        <div className='process-grid__static'>
           <h2 className='heading-2'>Our Process</h2>
           <p className='text'>
             Here at Adaptive Labs we work with the vision that everything is
@@ -12,7 +12,7 @@ const Process = () => {
             Below you can read the 4 step Adaptive process
           </p>
         </div>
-        <div className='process__flexible--1'>
+        <div className='process-grid__flexible  process-grid__flexible--1'>
           <h3 className='heading-3'>1. Meeting You</h3>
           <div className='content'>
             <p>
@@ -24,7 +24,7 @@ const Process = () => {
             </p>
           </div>
         </div>
-        <div className='process__flexible--2'>
+        <div className='process-grid__flexible  process-grid__flexible--2'>
           <h3 className='heading-3'>2. Design Phase</h3>
           <div className='content'>
             <p>
@@ -39,7 +39,7 @@ const Process = () => {
             </p>
           </div>
         </div>
-        <div className='process__flexible--3'>
+        <div className='process-grid__flexible  process-grid__flexible--3'>
           <h3 className='heading-3'>3. Developing</h3>
           <div className='content'>
             <p>
@@ -57,7 +57,7 @@ const Process = () => {
             </p>
           </div>
         </div>
-        <div className='process__flexible--4'>
+        <div className='process-grid__flexible process-grid__flexible--4'>
           <h3 className='heading-3'>4. Delivery</h3>
           <div className='content'>
             <p className='paragraph'>

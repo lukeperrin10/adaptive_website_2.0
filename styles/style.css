@@ -154,11 +154,32 @@ body {
 
 .process-grid {
   display: grid;
-  grid-template-rows: repeat(5, minmax(200px, 1fr));
+  grid-template-rows: 250px repeat(4, min-content);
   grid-template-columns: 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
+}
+.process-grid__static {
+  align-self: center;
+}
+.process-grid__flexible {
+  padding: 50px 200px;
+}
+.process-grid__flexible--1 {
+  background-color: var(--color-secondary);
+}
+.process-grid__flexible--2 {
+  background-color: var(--color-tertiary);
+}
+.process-grid__flexible--3 {
+  background-color: var(--color-primary);
+}
+.process-grid__flexible--4 {
+  background-color: var(--color-quinary);
+}
+.process-grid .content {
+  opacity: 1;
 }
 
 .home-container {
@@ -174,8 +195,7 @@ body {
 
 .process {
   height: 100%;
-  padding: 20px 200px;
-  background-color: green;
+  background-color: var(--color-quaternary);
 }
 
 .craft-academy {
