@@ -5,14 +5,19 @@
   justify-items: center;
   align-items: start;
   text-align: center;
+  overflow: hidden;
+  cursor: pointer;
 
   &__static {
     align-self: center;
   }
 
   .accordion-item {
-    padding: 5rem 50rem 3rem 50rem;
+    padding: 5rem 0 3rem 0;
     position: relative;
+    width: 100vw;
+    overflow: hidden;
+
     &--1 {
       background-color: var(--color-secondary);
     }
@@ -30,9 +35,16 @@
     }
 
     &__content {
-      opacity: 1;
-      &:active {
-        opacity: 0;
+      margin-bottom: 2rem;
+      padding: 0 60rem;
+      transition: height 3s, max-height 1s;
+      height: 0px;
+      max-height: 0px;
+      overflow: hidden;
+
+      &--extended {
+        height: 100%;
+        max-height: 300px;
       }
     }
 
@@ -42,7 +54,16 @@
 
     &__icon {
       fill: #fadbf6;
+      transition: all 1s;
+
+      &--extended {
+        transform: rotateX(180deg);
+      }
     }
   }
 
+  .accordion-item:hover {
+    opacity: 0.9;
+    transition: opacity 0.4s ease-out;
+  }
 }

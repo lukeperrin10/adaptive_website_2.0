@@ -1,7 +1,12 @@
-export const ChevronDown = ({ color }) => {
+import React from 'react'
+
+export const ChevronDown = ({isActive}) => {
+  const extended = 'accordion-item__icon accordion-item__icon--extended' 
+  const closed = 'accordion-item__icon'
+
   return (
     <svg
-      className='accordion-item__icon'
+      className={isActive ? extended : closed}
       version='1.1'
       xmlns='http://www.w3.org/2000/svg'
       width='40'
