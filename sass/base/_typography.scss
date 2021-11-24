@@ -17,17 +17,26 @@ body {
 
 .heading-2 {
   @include font-selector(var(--font-heading), 400, 4rem);
-  text-transform: uppercase
+  text-transform: uppercase;
+  letter-spacing: .7rem;
 }
 
 .heading-3 {
   @include font-selector(var(--font-heading), 700, 3rem);
-  text-transform: capitalize
+  text-transform: capitalize;
+  letter-spacing: .5rem;
+}
+
+.heading-4 {
+  @include font-selector(var(--font-heading), 400, 2.4rem);
+  text-transform: capitalize;
+  letter-spacing: .2rem;
 }
 
 
 .paragraph {
   @include font-selector(var(--font-body), 400, 1.6rem);
+  line-height: 3rem;
 
   &--bold {
     font-weight: 700;

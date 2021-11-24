@@ -94,6 +94,7 @@ body {
   font-weight: 400;
   font-size: 4rem;
   text-transform: uppercase;
+  letter-spacing: 0.7rem;
 }
 
 .heading-3 {
@@ -101,12 +102,22 @@ body {
   font-weight: 700;
   font-size: 3rem;
   text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+
+.heading-4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
 }
 
 .paragraph {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.6rem;
+  line-height: 3rem;
 }
 .paragraph--bold {
   font-weight: 700;
@@ -147,7 +158,7 @@ body {
 .btn--orange {
   background: none;
   background-color: var(--color-ca-orange);
-  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 .btn--orange:hover {
   transform: scale(1.05);
@@ -155,7 +166,6 @@ body {
   box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 .btn--orange:focus {
-  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.3);
   animation: pulsate 1s infinite;
 }
 
@@ -225,15 +235,15 @@ body {
 }
 .accordion .accordion-item__content {
   margin-bottom: 2rem;
-  padding: 0 60rem;
-  transition: height 3s, max-height 1s;
+  padding: 0 25%;
+  transition: height 2s, max-height 2s;
   height: 0px;
   max-height: 0px;
   overflow: hidden;
 }
 .accordion .accordion-item__content--extended {
   height: 100%;
-  max-height: 300px;
+  max-height: 350px;
 }
 .accordion .accordion-item__icon-box {
   margin-top: 4rem;
@@ -248,6 +258,20 @@ body {
 .accordion .accordion-item:hover {
   opacity: 0.9;
   transition: opacity 0.4s ease-out;
+}
+
+.craft-academy {
+  padding: 6rem;
+}
+.craft-academy__sub-head {
+  margin: 4rem;
+}
+.craft-academy__content {
+  padding: 0 25%;
+  text-align: center;
+}
+.craft-academy__logo {
+  margin: 5rem;
 }
 
 .home-container {
