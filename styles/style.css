@@ -31,16 +31,32 @@ Order: Base + Typography > general layout + grid > page layout > components
   --color-background: #250022;
   --color-background-light: #51334e;
   --color-background-dark: #1e001b;
+  --color-ca-orange: #e5923f;
+  --color-ca-orange-dark: #d18539;
   --color-white: #fff;
   --color-black: #000;
   --color-text: #FFD9F3;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.06);
   --line: 1px solid var(--color-grey-light-2);
   --font-heading: "video", "sans-serif";
   --font-body: "source-sans-pro", "sans-serif";
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
 *,
 *::before,
 *::after {
@@ -78,6 +94,7 @@ body {
   font-weight: 400;
   font-size: 4rem;
   text-transform: uppercase;
+  letter-spacing: 0.7rem;
 }
 
 .heading-3 {
@@ -85,12 +102,22 @@ body {
   font-weight: 700;
   font-size: 3rem;
   text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+
+.heading-4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
 }
 
 .paragraph {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.6rem;
+  line-height: 3rem;
 }
 .paragraph--bold {
   font-weight: 700;
@@ -118,7 +145,7 @@ body {
   background: linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%);
   border: 0;
   border-radius: 100px;
-  box-shadow: inset 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  box-shadow: inset 0 0px 5px 0px rgba(255, 105, 135, 0.3);
   color: #eee;
   padding: 8px 30px;
   text-transform: uppercase;
@@ -127,6 +154,19 @@ body {
 .btn:hover {
   transform: scale(1.05);
   box-shadow: inset 0 32px 59px 22px rgba(75, 169, 255, 0.2);
+}
+.btn--orange {
+  background: none;
+  background-color: var(--color-ca-orange);
+  box-shadow: none;
+}
+.btn--orange:hover {
+  transform: scale(1.05);
+  background-color: var(--color-ca-orange-dark);
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.btn--orange:focus {
+  animation: pulsate 1s infinite;
 }
 
 .hero {
@@ -195,15 +235,15 @@ body {
 }
 .accordion .accordion-item__content {
   margin-bottom: 2rem;
-  padding: 0 60rem;
-  transition: height 3s, max-height 1s;
+  padding: 0 25%;
+  transition: height 2s, max-height 2s;
   height: 0px;
   max-height: 0px;
   overflow: hidden;
 }
 .accordion .accordion-item__content--extended {
   height: 100%;
-  max-height: 300px;
+  max-height: 350px;
 }
 .accordion .accordion-item__icon-box {
   margin-top: 4rem;
@@ -218,6 +258,20 @@ body {
 .accordion .accordion-item:hover {
   opacity: 0.9;
   transition: opacity 0.4s ease-out;
+}
+
+.craft-academy {
+  padding: 6rem;
+}
+.craft-academy__sub-head {
+  margin: 4rem;
+}
+.craft-academy__content {
+  padding: 0 25%;
+  text-align: center;
+}
+.craft-academy__logo {
+  margin: 5rem;
 }
 
 .home-container {
@@ -238,8 +292,12 @@ body {
 }
 
 .craft-academy {
-  height: 6rem;
-  background-color: red;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 6rem;
+  background-color: var(--color-senary);
 }
 
 .clients {

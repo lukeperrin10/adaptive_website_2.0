@@ -16,10 +16,12 @@ export const accordionData = [
     content: `During this phase we deal with generating a detailed draft or
     "HiFi" and application architecture. How it will look and work
     on completion. Conducting user testing to verify a friendly and
-    welcoming UI/UX. The "HiFi's" will be shared via a link which
+    welcoming UI/UX.
+    The "HiFi's" will be shared via a link which
     gives the possibility to navigate the application and create
     comments and notes. A final meeting is arranged to review
-    aforementioned "HiFi's". Hopefully everything is in order and
+    aforementioned "HiFi's".
+    Hopefully everything is in order and
     development can begin.`,
   },
   {

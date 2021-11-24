@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { ChevronDown } from './ChevronDown'
+import { ChevronDown } from './SVGs'
 
 const Accordion = ({ title, content, color }) => {
   const [isActive, setIsActive] = useState(false)
 
-  const extended = 'accordion-item__content accordion-item__content--extended'
-  const closed = 'accordion-item__content'
+  const extended = 'accordion-item__content accordion-item__content--extended paragraph'
+  const closed = 'accordion-item__content paragraph'
 
   return (
     <div className={color} onClick={() => setIsActive(!isActive)}>

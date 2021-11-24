@@ -36,15 +36,15 @@
 
     &__content {
       margin-bottom: 2rem;
-      padding: 0 60rem;
-      transition: height 3s, max-height 1s;
+      padding: 0 25%;
+      transition: height 2s, max-height 2s;
       height: 0px;
       max-height: 0px;
       overflow: hidden;
 
       &--extended {
         height: 100%;
-        max-height: 300px;
+        max-height: 350px;
       }
     }
 
