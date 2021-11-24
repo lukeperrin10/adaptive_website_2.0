@@ -27,11 +27,19 @@
   justify-items: center;
   min-height: 6rem;
   background-color: var(--color-senary);
+  padding: 8rem 0;
 }
 
 .clients {
-  height: 6rem;
-  background-color: blue;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 6rem;
+  background-image: url(../public/assets/images/BgClients_1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
 }
 
 .tech {

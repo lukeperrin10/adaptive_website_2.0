@@ -47,6 +47,6 @@ export const accordionData = [
     content: `The time has come for the final application delivery. We'll give
     you a guided tour of your application, answer your questions,
     supply any documentation and deploy the site on your domain for
-    the world to see. That's the Adaptive Process`,
+    the world to see. That's the Adaptive Process.`,
   },
 ]
