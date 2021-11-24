@@ -287,10 +287,86 @@ body {
   height: 7rem;
 }
 
-.contact__get-in-touch {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.tech__icon-box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 0 7rem;
+  margin-top: 3rem;
+}
+.tech__icon {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14rem;
+}
+.tech__name {
+  margin-top: 1.6rem;
+  padding-left: 0.2rem;
+}
+.tech__name--cypress {
+  color: #919191;
+}
+.tech__name--node {
+  color: #6e9054;
+}
+.tech__name--react {
+  color: #61dbfb;
+}
+.tech__name--rails {
+  color: #cc1d00;
+}
+.tech__name--next {
+  color: #aca215;
+}
+.tech__name--rspec {
+  color: #ef4d6f;
+}
+
+.vial {
+  fill: rgba(255, 255, 255, 0.253);
+  height: 10rem;
+  text-align: center;
+}
+
+.contact__contact-information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  padding-top: 4rem;
+}
+.contact__get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__contact-form {
+  margin: 2rem;
+}
+.contact__contact-form input[type=text] {
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+}
+.contact__contact-form input[type=textarea] {
+  width: 100%;
+  height: 10rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .home-container {
@@ -333,18 +409,29 @@ body {
 }
 
 .tech {
-  height: 6rem;
-  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: var(--color-background);
+  min-height: 6rem;
+  padding: 8rem 0;
+}
+
+.body-theme {
+  background: transparent linear-gradient(165deg, #250022 0%, #250022 14%, #f84b9b 37%, #a581dd 51%, #6588e2 63%, #2b6ba7 72%, #250022 88%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 
 .about {
   height: 6rem;
-  background-color: orangered;
 }
 
 .contact {
-  height: 6rem;
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .footer {
