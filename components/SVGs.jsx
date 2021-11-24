@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const ChevronDown = ({isActive}) => {
-  const extended = 'accordion-item__icon accordion-item__icon--extended' 
+export const ChevronDown = ({ isActive }) => {
+  const extended = 'accordion-item__icon accordion-item__icon--extended'
   const closed = 'accordion-item__icon'
 
   return (
@@ -17,3 +17,4 @@ export const ChevronDown = ({isActive}) => {
     </svg>
   )
 }
+

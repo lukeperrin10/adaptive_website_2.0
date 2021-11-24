@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChevronDown } from './ChevronDown'
+import { ChevronDown } from './SVGs'
 
 const Accordion = ({ title, content, color }) => {
   const [isActive, setIsActive] = useState(false)

@@ -28,14 +28,17 @@
   --color-background-light: #51334e;
   --color-background-dark: #1e001b;
 
+  --color-ca-orange: #e5923f;
+  --color-ca-orange-dark: #d18539;
+
   --color-white: #fff;
   --color-black: #000;
 
   --color-text: #FFD9F3;
 
   // SHADOWS
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.06);
 
   // LINES
   --line: 1px solid var(--color-grey-light-2);
