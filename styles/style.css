@@ -58,19 +58,33 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.6rem;
+  color: #fadbf6;
 }
 
 .heading {
   font-family: var(--font-heading);
   font-weight: 400;
   font-size: 6rem;
-  color: #fadbf6;
 }
 .heading--semi-bold {
   font-weight: 600;
 }
 .heading--bold {
   font-weight: 700;
+}
+
+.heading-2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: capitalize;
 }
 
 .paragraph {
@@ -90,6 +104,14 @@ body {
 
 .u-center-text {
   text-align: center;
+}
+
+.mb-lg {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -140,6 +162,64 @@ body {
   object-fit: cover;
 }
 
+.accordion {
+  display: grid;
+  grid-template-rows: 25rem repeat(4, min-content);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: start;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.accordion__static {
+  align-self: center;
+}
+.accordion .accordion-item {
+  padding: 5rem 0 3rem 0;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+.accordion .accordion-item--1 {
+  background-color: var(--color-secondary);
+}
+.accordion .accordion-item--2 {
+  background-color: var(--color-tertiary);
+}
+.accordion .accordion-item--3 {
+  background-color: var(--color-primary);
+}
+.accordion .accordion-item--4 {
+  background-color: var(--color-quinary);
+}
+.accordion .accordion-item__content {
+  margin-bottom: 2rem;
+  padding: 0 60rem;
+  transition: height 3s, max-height 1s;
+  height: 0px;
+  max-height: 0px;
+  overflow: hidden;
+}
+.accordion .accordion-item__content--extended {
+  height: 100%;
+  max-height: 300px;
+}
+.accordion .accordion-item__icon-box {
+  margin-top: 4rem;
+}
+.accordion .accordion-item__icon {
+  fill: #fadbf6;
+  transition: all 1s;
+}
+.accordion .accordion-item__icon--extended {
+  transform: rotateX(180deg);
+}
+.accordion .accordion-item:hover {
+  opacity: 0.9;
+  transition: opacity 0.4s ease-out;
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
@@ -152,8 +232,9 @@ body {
 }
 
 .process {
-  height: 6rem;
-  background-color: green;
+  height: 100%;
+  min-width: 100%;
+  background-color: var(--color-quaternary);
 }
 
 .craft-academy {

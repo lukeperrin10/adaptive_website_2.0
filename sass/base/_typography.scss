@@ -1,10 +1,10 @@
 body {
   @include font-selector(var(--font-body), 400, 1.6rem);
+  color: #fadbf6;
 }
 
 .heading {
   @include font-selector(var(--font-heading), 400, 6rem);
-  color: #fadbf6;
 
   &--semi-bold {
     font-weight: 600;
@@ -12,7 +12,19 @@ body {
   &--bold {
     font-weight: 700;
   }
+
 }
+
+.heading-2 {
+  @include font-selector(var(--font-heading), 400, 4rem);
+  text-transform: uppercase
+}
+
+.heading-3 {
+  @include font-selector(var(--font-heading), 700, 3rem);
+  text-transform: capitalize
+}
+
 
 .paragraph {
   @include font-selector(var(--font-body), 400, 1.6rem);

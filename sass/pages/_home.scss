@@ -15,8 +15,9 @@
 }
 
 .process {
-  height: 6rem;
-  background-color: green;
+  height: 100%;
+  min-width: 100%;
+  background-color: var(--color-quaternary);
 }
 
 .craft-academy {
