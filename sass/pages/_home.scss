@@ -10,7 +10,6 @@
 }
 
 .hero {
-
 }
 
 .process {
@@ -46,19 +45,32 @@
   background-color: blueviolet;
 }
 
+.body-theme {
+  background: transparent
+    linear-gradient(
+      165deg,
+      #250022 0%,
+      #250022 14%,
+      #f84b9b 37%,
+      #a581dd 51%,
+      #6588e2 63%,
+      #2b6ba7 72%,
+      #250022 88%,
+      #000000 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
 .about {
   height: 6rem;
-  background-color: orangered;
 }
 
 .contact {
-  min-height: 6rem;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .footer {
