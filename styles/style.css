@@ -287,6 +287,49 @@ body {
   height: 7rem;
 }
 
+.tech__icon-box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 0 7rem;
+  margin-top: 3rem;
+}
+.tech__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14rem;
+}
+.tech__name {
+  margin-top: 1.6rem;
+  padding-left: 0.2rem;
+}
+.tech__name--cypress {
+  color: #919191;
+}
+.tech__name--node {
+  color: #6e9054;
+}
+.tech__name--react {
+  color: #61dbfb;
+}
+.tech__name--rails {
+  color: #cc1d00;
+}
+.tech__name--next {
+  color: #aca215;
+}
+.tech__name--rspec {
+  color: #ef4d6f;
+}
+
+.vial {
+  fill: rgba(255, 255, 255, 0.253);
+  height: 10rem;
+  text-align: center;
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
@@ -327,8 +370,13 @@ body {
 }
 
 .tech {
-  height: 6rem;
-  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: var(--color-background);
+  min-height: 6rem;
+  padding: 8rem 0;
 }
 
 .about {
