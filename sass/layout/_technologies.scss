@@ -1,0 +1,51 @@
+.tech {
+  &__icon-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-gap: 0 7rem;
+    margin-top: 3rem;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 14rem;
+  }
+
+  &__name {
+    margin-top: 1.6rem;
+    padding-left: 0.2rem;
+    &--cypress {
+      color: #919191;
+    }
+
+    &--node {
+      color: #6e9054;
+    }
+
+    &--react {
+      color: #61dbfb;
+    }
+
+    &--rails {
+      color: #cc1d00;
+    }
+
+    &--next {
+      color: #aca215;
+    }
+
+    &--rspec {
+      color: #ef4d6f;
+    }
+  }
+}
+
+.vial {
+  fill: rgba(255, 255, 255, 0.253);
+  height: 10rem;
+  text-align: center;
+}
