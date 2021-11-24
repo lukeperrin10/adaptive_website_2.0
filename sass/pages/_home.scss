@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
   grid-template-columns: 1fr;
-
 }
 
 .nav {
@@ -11,7 +10,7 @@
 }
 
 .hero {
- 
+
 }
 
 .process {
@@ -53,8 +52,13 @@
 }
 
 .contact {
-  height: 6rem;
+  min-height: 6rem;
   background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
 }
 
 .footer {

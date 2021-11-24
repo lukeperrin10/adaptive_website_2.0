@@ -287,21 +287,10 @@ body {
   height: 7rem;
 }
 
-.contact__contact-information {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .contact__get-in-touch {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
-.contact__form {
-  margin-top: 2rem;
-  margin-left: 2rem;
 }
 
 .home-container {
@@ -354,13 +343,8 @@ body {
 }
 
 .contact {
-  min-height: 6rem;
+  height: 6rem;
   background-color: pink;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem;
 }
 
 .footer {
@@ -368,4 +352,4 @@ body {
   background-color: yellow;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.comp.css.map */

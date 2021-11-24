@@ -1,0 +1,20 @@
+.contact {
+  &__contact-information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__get-in-touch {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+
+  &__form {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
