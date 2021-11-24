@@ -133,6 +133,10 @@ body {
   text-align: center;
 }
 
+.mb-xl {
+  margin-bottom: 4rem;
+}
+
 .mb-lg {
   margin-bottom: 2rem;
 }
@@ -216,7 +220,7 @@ body {
   align-self: center;
 }
 .accordion .accordion-item {
-  padding: 5rem 0 3rem 0;
+  padding: 8rem 0 1rem 0;
   position: relative;
   width: 100vw;
   overflow: hidden;
@@ -260,9 +264,6 @@ body {
   transition: opacity 0.4s ease-out;
 }
 
-.craft-academy {
-  padding: 6rem;
-}
 .craft-academy__sub-head {
   margin: 4rem;
 }
@@ -272,6 +273,18 @@ body {
 }
 .craft-academy__logo {
   margin: 5rem;
+}
+
+.clients__logo-box {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8rem;
+  margin-top: 3rem;
+}
+.clients__logo {
+  fill: #c4c4c4;
+  height: 7rem;
 }
 
 .home-container {
@@ -298,11 +311,19 @@ body {
   justify-items: center;
   min-height: 6rem;
   background-color: var(--color-senary);
+  padding: 8rem 0;
 }
 
 .clients {
-  height: 6rem;
-  background-color: blue;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 6rem;
+  background-image: url(../public/assets/images/BgClients_1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
 }
 
 .tech {

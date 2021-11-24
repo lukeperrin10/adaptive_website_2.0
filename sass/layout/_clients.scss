@@ -1,0 +1,13 @@
+.clients {
+  &__logo-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8rem;
+    margin-top: 3rem;
+  }
+  &__logo {
+    fill: #c4c4c4;
+    height: 7rem;
+  }
+}
