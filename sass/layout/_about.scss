@@ -45,13 +45,13 @@
       transform: translateX(0.5rem) translateY(0.5rem);
     }
 
-    &__content {
-    }
-
     &__name {
+      @include font-selector(var(--font-heading), 700, 1.6rem);
+      line-height: 4rem;
     }
 
     &__text {
+      line-height: 2.5rem;
     }
   }
 }

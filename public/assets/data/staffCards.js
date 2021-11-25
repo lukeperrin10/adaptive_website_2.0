@@ -3,7 +3,7 @@ import Luke from '../images/staff_photos/Luke.png'
 import Kim from '../images/staff_photos/Kim.png'
 import Thomas from '../images/staff_photos/Thomas.png'
 
-export const staffCardsData = [
+const staffCardsData = [
   {
     id: 1,
     color: 'worker__outer-circle worker__outer-circle--pink',
@@ -37,3 +37,5 @@ export const staffCardsData = [
       'Fullstack developer with a passion for turning ideas and dreams into code and building systems that connects people and business. Devoted agile-practitioner and evangelist. Open source contributor.',
   },
 ]
+
+export default staffCardsData

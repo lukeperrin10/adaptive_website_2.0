@@ -370,6 +370,16 @@ body {
   border: none;
   transform: translateX(0.5rem) translateY(0.5rem);
 }
+.about .worker__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+.about .worker__text {
+  line-height: 2.5rem;
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);

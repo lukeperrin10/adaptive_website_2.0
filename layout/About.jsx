@@ -1,5 +1,5 @@
 import React from 'react'
-import { staffCardsData } from '../public/assets/data/staffCards'
+import staffCardsData from '../public/assets/data/staffCards'
 import StaffCard from '../components/StaffCard'
 
 const About = () => {
