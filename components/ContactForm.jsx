@@ -4,27 +4,42 @@ const ContactForm = () => {
   return (
     <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="contact-us" value="contact" />
-      <p className="contact__contact-form">
+      <div className="contact__contact-form-group">
         <input
           className="contact__form-input"
           type="text"
           name="name"
-          placeholder="Name"
+          autoComplete="off"
         />
+        <label className="contact__floating-label">Name</label>
+      </div>
+      <div className="contact__contact-form-group">
         <input
           className="contact__form-input"
           type="text"
           name="email"
-          placeholder="Email"
+          autoComplete="off"
         />
+        <label className="contact__floating-label">Email</label>
+      </div>
+      <div className="contact__contact-form-group">
         <input
           className="contact__form-input"
           type="text"
           name="phone"
-          placeholder="Phone"
+          autoComplete="off"
         />
-        <input className="contact__form-text-area" type="textarea" name="message" placeholder="Message" />
-      </p>
+        <label className="contact__floating-label">Phone</label>
+      </div>
+      <div className="contact__contact-form-group">
+        <input
+          className="contact__form-text-area"
+          type="textarea"
+          name="message"
+          autoComplete="off"
+        />
+        <label className="contact__floating-label">Message</label>
+      </div>
     </form>
   );
 };

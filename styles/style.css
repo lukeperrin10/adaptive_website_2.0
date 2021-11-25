@@ -400,19 +400,37 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.contact__contact-form {
+.contact__contact-form-group {
   margin: 2rem;
+  position: relative;
 }
-.contact__contact-form input[type=text] {
+.contact__contact-form-group__floating-label {
+  font-size: 13px;
+  color: #cccccc;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+.contact__contact-form-group--input:focus ~ .contact__contact-form-group__floating-label, .contact__contact-form-group--input:not(:focus):valid ~ .contact__contact-form-group__floating-label {
+  top: -1.5rem;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5rem;
+  opacity: 1;
+  color: #fff;
+}
+.contact__contact-form-group input[type=text] {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   margin-top: 1rem;
   border: none;
   background-color: transparent;
   color: #fff;
   font-size: 2rem;
 }
-.contact__contact-form input[type=textarea] {
+.contact__contact-form-group input[type=textarea] {
   width: 100%;
   height: 10rem;
   margin-top: 1rem;
@@ -481,7 +499,6 @@ body {
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   justify-items: center;
-  background-color: var(--color-background);
   min-height: 6rem;
   padding: 8rem 0;
 }
@@ -499,4 +516,4 @@ body {
   background-color: yellow;
 }
 
-/*# sourceMappingURL=style.comp.css.map */
+/*# sourceMappingURL=style.css.map */
