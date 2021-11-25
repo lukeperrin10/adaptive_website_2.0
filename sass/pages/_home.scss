@@ -53,8 +53,13 @@
 }
 
 .about {
-  height: 6rem;
-  background-color: orangered;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: var(--color-background);
+  min-height: 6rem;
+  padding: 8rem 0;
 }
 
 .contact {

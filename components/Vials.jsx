@@ -9,7 +9,7 @@ export const Vial1 = () => {
       <g id='Lager_2' data-name='Lager 2'>
         <g id='Lager_1-2' data-name='Lager 1'>
           <path
-            clasName='cls-1'
+            className='cls-1'
             d='M35.72,203C20.44,203,8,189.57,8,173V80.93H63.44V173C63.44,189.57,51,203,35.72,203Z'
           />
           <path

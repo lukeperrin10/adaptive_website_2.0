@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel='stylesheet' href='https://use.typekit.net/xid4pyt.css'/>
+          <link rel='stylesheet' href='https://use.typekit.net/xid4pyt.css' />
         </Head>
         <body>
           <Main />
