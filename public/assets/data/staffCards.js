@@ -3,9 +3,10 @@ import Luke from '../images/staff_photos/Luke.png'
 import Kim from '../images/staff_photos/Kim.png'
 import Thomas from '../images/staff_photos/Thomas.png'
 
-const staffCards = [
+export const staffCardsData = [
   {
     id: 1,
+    color: 'worker__outer-circle worker__outer-circle--pink',
     name: 'Jens Østgaard',
     image: Jens,
     description:
@@ -13,6 +14,7 @@ const staffCards = [
   },
   {
     id: 2,
+    color: 'worker__outer-circle worker__outer-circle--blue',
     name: 'Luke Perrin',
     image: Luke,
     description:
@@ -20,6 +22,7 @@ const staffCards = [
   },
   {
     id: 3,
+    color: 'worker__outer-circle worker__outer-circle--pink',
     name: 'Kim Haaga',
     image: Kim,
     description:
@@ -27,11 +30,10 @@ const staffCards = [
   },
   {
     id: 4,
+    color: 'worker__outer-circle worker__outer-circle--blue',
     name: 'Thomas Ochman',
     image: Thomas,
     description:
       'Fullstack developer with a passion for turning ideas and dreams into code and building systems that connects people and business. Devoted agile-practitioner and evangelist. Open source contributor.',
   },
 ]
-
-export default staffCards

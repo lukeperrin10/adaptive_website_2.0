@@ -1,0 +1,57 @@
+.about {
+  &__paragraph {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 17rem;
+  }
+
+  .worker {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 7rem;
+    width: 50%;
+
+    &__outer-circle {
+      justify-self: end;
+      margin-right: 10rem;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      border: none;
+
+      &--pink {
+        background-color: var(--color-secondary);
+      }
+
+      &--blue {
+        background-color: var(--color-senary);
+      }
+    }
+
+    &__inner-circle {
+      background-color: var(--color-text);
+      width: 19rem;
+      height: 19rem;
+      border-radius: 50%;
+      border: none;
+      transform: translateX(0.5rem) translateY(0.5rem);
+    }
+
+    &__image {
+      width: 18rem;
+      height: 18rem;
+      border: none;
+      transform: translateX(0.5rem) translateY(0.5rem);
+    }
+
+    &__content {
+    }
+
+    &__name {
+    }
+
+    &__text {
+    }
+  }
+}
