@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="contact__contact-information">
         <div className="contact__get-in-touch">
           <h4 className="heading-4">get in touch</h4>
-          <p>
+          <p className="paragraph">
             To Know more about what we can offer you, please get in touch. Feel
             free to send us an email, a message on LinkedIn or use the form. We
             will be happy to discuss your requirements and present possible
