@@ -6,6 +6,7 @@ import CraftAcademy from '../layout/CraftAcademy'
 import Hero from '../layout/Hero'
 import Process from '../layout/Process'
 import Technologies from '../layout/Technologies'
+import Footer from '../layout/Footer'
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
       <Technologies />
       <About />
       <Contact />
-      
+      {/* <Footer /> */}
     </div>
   )
 }

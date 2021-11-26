@@ -67,7 +67,12 @@
   background-color: pink;
 }
 
-.footer {
-  height: 6rem;
-  background-color: yellow;
-}
+// .footer {
+//   display: grid;
+//   grid-template-rows: auto;
+//   grid-template-columns: 1fr;
+//   justify-items: center;
+//   background-color: var(--color-background);
+//   min-height: 6rem;
+//   padding: 8rem 0;
+// }
