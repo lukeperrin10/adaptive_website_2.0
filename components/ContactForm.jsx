@@ -10,35 +10,36 @@ const ContactForm = () => {
           type="text"
           name="name"
           autoComplete="off"
+          placeholder="Name"
         />
-        <label className="contact__floating-label">Name</label>
-      </div>
-      <div className="contact__contact-form-group">
+
         <input
           className="contact__form-input"
-          type="text"
+          type="email"
           name="email"
           autoComplete="off"
+          placeholder="Email"
         />
-        <label className="contact__floating-label">Email</label>
-      </div>
-      <div className="contact__contact-form-group">
+
         <input
           className="contact__form-input"
-          type="text"
+          type="tel"
           name="phone"
           autoComplete="off"
+          placeholder="Phone"
         />
-        <label className="contact__floating-label">Phone</label>
-      </div>
-      <div className="contact__contact-form-group">
+
         <input
           className="contact__form-text-area"
           type="textarea"
           name="message"
           autoComplete="off"
+          placeholder="Message"
         />
-        <label className="contact__floating-label">Message</label>
+
+        <button className="btn" type="submit">
+          Submit
+        </button>
       </div>
     </form>
   );
