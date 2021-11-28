@@ -230,6 +230,9 @@ body {
   visibility: hidden;
   transform: translateY(-4rem);
 }
+.form .hidden {
+  display: none;
+}
 
 .hero {
   display: grid;
