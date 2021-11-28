@@ -63,7 +63,7 @@ const ContactForm = () => {
           Submit
         </button>
       </div>
-      <label class="hidden">
+      <label className="hidden">
         Don’t fill this out if you’re human:
         <input name="bot-field" />
       </label>
