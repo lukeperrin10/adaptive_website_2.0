@@ -380,6 +380,108 @@ body {
   line-height: 2.5rem;
 }
 
+.footer-box {
+  position: relative;
+  min-height: 26rem;
+}
+.footer-box svg {
+  width: 100vw;
+}
+.footer-box .footer {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+.footer-box .footer span {
+  font-weight: bold;
+  color: #ffa036;
+  text-shadow: 0 0 15px rgba(255, 160, 54, 0.4);
+}
+.footer-box .footer .gooey-animations {
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 400px;
+  bottom: 0;
+  filter: url("#goo");
+}
+.footer-box .footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 225px;
+  clip-path: url("#wave");
+  background-color: #28323b;
+}
+@media only screen and (max-width: 700px) {
+  .footer-box .footer::after {
+    clip-path: none;
+    height: 150px;
+  }
+}
+.footer-box .footer .ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #28323b;
+  position: absolute;
+  animation: up 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+}
+@media only screen and (max-width: 700px) {
+  .footer-box .footer .ball {
+    animation: up-small 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+  }
+}
+.footer-box .footer .ball-enter {
+  bottom: 0px;
+  left: -2.8076209971vw;
+  transform: translateY(3.6624931201px);
+  background-color: orange;
+}
+.footer-box .footer .ball-enter-active {
+  bottom: 0px;
+  left: -83.7506521009vw;
+  transform: translateY(3.1060481168px);
+  background-color: orange;
+}
+@keyframes up {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+@keyframes up-small {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
@@ -445,8 +547,13 @@ body {
 }
 
 .footer {
-  height: 6rem;
-  background-color: yellow;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 6rem;
+  padding: 8rem 0;
+  background-color: var(--color-background);
 }
 
 /*# sourceMappingURL=style.css.map */

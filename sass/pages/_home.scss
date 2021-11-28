@@ -68,6 +68,11 @@
 }
 
 .footer {
-  height: 6rem;
-  background-color: yellow;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 6rem;
+  padding: 8rem 0;
+  background-color: var(--color-background);
 }
