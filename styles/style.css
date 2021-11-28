@@ -449,6 +449,10 @@ body {
   grid-template-columns: 1fr;
 }
 
+.body-theme {
+  background: transparent linear-gradient(165deg, #250022 0%, #250022 20%, #f84b9b 37%, #a581dd 51%, #6588e2 63%, #2b6ba7 72%, #250022 82%, #250022 100%) 0% 0% no-repeat padding-box;
+}
+
 .nav {
   height: 6rem;
   background-color: chocolate;
@@ -490,10 +494,6 @@ body {
   background-color: var(--color-background);
   min-height: 6rem;
   padding: 8rem 0;
-}
-
-.body-theme {
-  background: transparent linear-gradient(165deg, #250022 0%, #250022 14%, #f84b9b 37%, #a581dd 51%, #6588e2 63%, #2b6ba7 72%, #250022 88%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 
 .about {
