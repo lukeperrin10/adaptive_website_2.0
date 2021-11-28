@@ -1,0 +1,57 @@
+.form {
+  &__group {
+    margin-bottom: 1.5rem;
+    display: grid;
+    min-width: 40rem;
+    justify-items: center;
+  }
+  &__input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 1rem;
+    border-radius: 3px;
+    background-color: rgba(var(--color-white, 0.1));
+    border: 1px solid $color-primary;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &:focus:invalid,
+    &:invalid {
+      border-bottom: 3px solid $color-secondary;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-text);
+    }
+
+    &--text-area {
+      height: 15rem;
+      resize: none;
+      padding: 1rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    justify-self: start;
+    margin-left: 3.2rem;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

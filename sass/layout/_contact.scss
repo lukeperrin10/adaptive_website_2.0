@@ -6,10 +6,6 @@
     grid-template-rows: 100%;
     justify-items: center;
     padding-top: 4rem;
-    .btn {
-      max-width: 20rem;
-      justify-self: center;
-    }
   }
 
   &__get-in-touch {
@@ -17,14 +13,6 @@
     flex-direction: column;
     align-items: center;
     max-width: 55rem;
-
-    h4 {
-      margin-bottom: 3rem;
-    }
-
-    p {
-      margin-bottom: 3rem;
-    }
   }
 
   &__form-box {
@@ -32,41 +20,10 @@
     flex-direction: column;
     align-items: center;
   }
+}
 
-  &__contact-form-group {
-    margin: 2rem;
-    display: grid;
-    min-width: 40rem;
-
-    ::placeholder {
-      color: #fff;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
-      height: 5rem;
-      margin-top: 1rem;
-      border-radius: 7px;
-      border: 1px solid #fff;
-      background-color: transparent;
-      color: #fff;
-      font-size: 2rem;
-      padding: 1rem;
-    }
-
-    input[type="textarea"] {
-      min-height: 15rem;
-      margin-top: 1rem;
-      border: none;
-      background-color: transparent;
-      color: #fff;
-      font-size: 2rem;
-      text-align: inherit;
-      margin-bottom: 2rem;
-      border-radius: 7px;
-      border: 1px solid #fff;
-      padding: 1rem;
-    }
-  }
+.sns-link {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
