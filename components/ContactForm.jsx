@@ -7,7 +7,6 @@ const ContactForm = () => {
       method="POST"
       data-netlify="true"
       className="form"
-      action="/"
       netlify-honeypot="bot-field"
     >
       <div className="form__group">
