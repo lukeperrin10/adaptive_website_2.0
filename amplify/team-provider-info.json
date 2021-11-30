@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-adaptivewebsite20-dev-153726-authRole",
+      "UnauthRoleArn": "arn:aws:iam::974662505684:role/amplify-adaptivewebsite20-dev-153726-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::974662505684:role/amplify-adaptivewebsite20-dev-153726-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-adaptivewebsite20-dev-153726-deployment",
+      "UnauthRoleName": "amplify-adaptivewebsite20-dev-153726-unauthRole",
+      "StackName": "amplify-adaptivewebsite20-dev-153726",
+      "StackId": "arn:aws:cloudformation:eu-north-1:974662505684:stack/amplify-adaptivewebsite20-dev-153726/0c35a750-51eb-11ec-9b73-060341f1e220",
+      "AmplifyAppId": "di0oo02urejt1"
+    }
+  }
+}
