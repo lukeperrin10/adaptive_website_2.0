@@ -33,6 +33,12 @@ body {
   letter-spacing: .2rem;
 }
 
+.heading-6 {
+  @include font-selector(var(--font-heading), 400, 1.8rem);
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+}
+
 
 .paragraph {
   @include font-selector(var(--font-body), 400, 1.6rem);

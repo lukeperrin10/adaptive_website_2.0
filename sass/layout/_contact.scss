@@ -1,0 +1,29 @@
+.contact {
+  &__contact-information {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    padding-top: 4rem;
+  }
+
+  &__get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 55rem;
+  }
+
+  &__form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sns-link {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
