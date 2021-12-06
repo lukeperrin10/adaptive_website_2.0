@@ -57,6 +57,15 @@ Order: Base + Typography > general layout + grid > page layout > components
     box-shadow: none;
   }
 }
+@keyframes raiseCircleBg {
+  0% {
+    bottom: -10rem;
+  }
+  100% {
+    bottom: 70%;
+    opacity: 0;
+  }
+}
 *,
 *::before,
 *::after {
@@ -151,6 +160,92 @@ body {
 
 .mb-md {
   margin-bottom: 1.5rem;
+}
+
+.animation-box {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+.animation-box .raise-circle-bg {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.animation-box .circle {
+  position: absolute;
+  bottom: -10rem;
+  background-color: var(--color-secondary);
+  width: 2rem;
+  height: 2rem;
+  animation: raiseCircleBg 10s infinite ease-in-out;
+  border-radius: 50%;
+}
+.animation-box .circle--1 {
+  width: 7.5rem;
+  height: 7.5rem;
+  left: 7%;
+}
+.animation-box .circle--2 {
+  width: 6.5rem;
+  height: 6.5rem;
+  left: 15%;
+  animation-delay: 4s;
+  background-color: var(--color-primary);
+}
+.animation-box .circle--3 {
+  width: 8.2rem;
+  height: 8.2rem;
+  left: 45%;
+  animation-delay: 8s;
+}
+.animation-box .circle--4 {
+  width: 7rem;
+  height: 7rem;
+  left: 55%;
+  animation-delay: 2s;
+}
+.animation-box .circle--5 {
+  width: 6rem;
+  height: 6rem;
+  left: 27%;
+  animation-delay: 6s;
+}
+.animation-box .circle--6 {
+  width: 5.5rem;
+  height: 5.5rem;
+  left: 60%;
+  animation-delay: 4s;
+}
+.animation-box .circle--7 {
+  width: 9rem;
+  height: 9rem;
+  left: 85%;
+  animation-delay: 9s;
+  background-color: var(--color-primary);
+}
+.animation-box .circle--8 {
+  width: 7rem;
+  height: 7rem;
+  left: 75%;
+  animation-delay: 4s;
+}
+.animation-box .circle--9 {
+  width: 4.5rem;
+  height: 4.5rem;
+  left: 10%;
+  animation-delay: 7s;
+}
+.animation-box .circle--10 {
+  width: 5.5rem;
+  height: 5.5rem;
+  left: 60%;
+  animation-delay: 4s;
 }
 
 .btn {
@@ -301,14 +396,13 @@ body {
 .accordion .accordion-item__content {
   margin-bottom: 2rem;
   padding: 0 25%;
-  transition: height 2s, max-height 2s;
-  height: 0px;
   max-height: 0px;
   overflow: hidden;
+  transition: max-height 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .accordion .accordion-item__content--extended {
-  height: 100%;
-  max-height: 350px;
+  max-height: 150px;
+  transition: max-height 2s cubic-bezier(0.5, 1, 0.89, 1);
 }
 .accordion .accordion-item__icon-box {
   margin-top: 4rem;
@@ -467,6 +561,32 @@ body {
   border: none;
 }
 
+.footer {
+  position: bottom;
+  padding: 0;
+}
+.footer__wave {
+  z-index: 2;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50rem;
+  margin-bottom: -11rem;
+}
+.footer__logo-box {
+  z-index: 2;
+  position: relative;
+  bottom: 5rem;
+  left: -74rem;
+  width: 150px;
+  padding-bottom: 0;
+}
+.footer__logo {
+  width: 100%;
+  position: absolute;
+  left: 20rem;
+}
+
 .home-container {
   display: grid;
   grid-template-rows: calc(100vh - 6rem);
@@ -538,8 +658,11 @@ body {
 }
 
 .footer {
-  height: 6rem;
-  background-color: yellow;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: var(--color-background);
 }
 
 /*# sourceMappingURL=style.css.map */
